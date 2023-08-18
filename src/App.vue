@@ -1,25 +1,35 @@
 <template>
-  <MenuPage />
+  <div>
+    <NavBar />
+    <!-- <SideBar /> -->
+<div class="justify-between">
+   <PizzaCard />
+    <CheckOut />  
+</div>
+   
+  </div>
 </template>
 
 <script>
-import MenuPage from './containers/MenuPage.vue'
+import NavBar from "./components/NavBar.vue";
+// import SideBar from "./components/SideBar.vue";
+import PizzaCard from "./components/PizzaCard.vue";
+import CheckOut from "./components/CheckOut.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    MenuPage
-  }
-}
+    NavBar,
+    // SideBar,
+    PizzaCard,
+    CheckOut,
+  },
+};
 </script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
